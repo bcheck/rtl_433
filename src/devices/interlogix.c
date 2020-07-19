@@ -197,6 +197,7 @@ static int interlogix_callback(r_device *decoder, bitbuffer_t *bitbuffer)
     data = data_make(
             "model",       "Model",         DATA_STRING, _X("Interlogix-Security","Interlogix"),
             _X("subtype","device_type"),     "Device Type",   DATA_STRING, device_type,
+            "device_type_id",   "Device Type ID",   DATA_STRING, device_type_id,
             "id",          "ID",            DATA_STRING, device_serial,
             "battery",     "Battery",       DATA_STRING, low_battery,
             "switch1",     "Switch1 State", DATA_STRING, f1_latch_state,
@@ -217,6 +218,8 @@ static char *output_fields[] = {
     "subtype",
     "id",
     "device_type", // TODO: delete this
+    "device_type_id", // TODO: delete this
+    "device_id
     "raw_message",
     "battery",
     "switch1",
