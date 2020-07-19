@@ -219,7 +219,7 @@ static char *output_fields[] = {
     "id",
     "device_type", // TODO: delete this
     "device_type_id", // TODO: delete this
-    "device_id
+    "device_id",
     "raw_message",
     "battery",
     "switch1",
